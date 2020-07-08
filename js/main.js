@@ -5,6 +5,14 @@ var names = [];
 var entries = [];
 var entriesCleaned = [];
 
+history.pushState({ pagestate: "resultsdown" }, null, "");
+
+window.onpopstate = () => {
+  if (window.history.state.pagestate == "resultsdown") {
+    backToInput();
+  }
+};
+
 const personLookup = async () => {
   var films = {};
   films.search = new filmsSearch(entriesCleaned);
@@ -24,6 +32,7 @@ const personLookup = async () => {
       document.getElementById("failtext").style.display = "none";
     }, 3000);
   } else {
+    history.pushState({ pagestate: "resultsup" }, null, "");
     document.getElementById("progress-button").style.display = "none";
     document.getElementById("background-text").style.display = "none";
     document.getElementById("actor-forms").style.display = "none";
@@ -106,3 +115,10 @@ document.getElementById("theButton").addEventListener("click", async () => {
     personLookup();
   }
 });
+
+const backToInput = () => {
+  document.getElementById("progress-button").style.display = "block";
+  document.getElementById("background-text").style.display = "block";
+  document.getElementById("actor-forms").style.display = "block";
+  document.getElementsByClassName("results")[0].style.display = "none";
+};
