@@ -196,11 +196,11 @@ CSS Grid layout for responive:
 
   #warningtext p,
   #failtext p {
-    font-size: 4.5vw;
+    font-size: 5.5vw;
   }
 
   #actor-forms {
-    padding-top: 85%;
+    padding-top: 65%;
   }
 
   .selectWraps {
@@ -236,7 +236,7 @@ CSS Grid layout for responive:
 
   #warningtext p,
   #failtext p {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 
   #actor-forms {
