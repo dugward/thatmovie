@@ -22,6 +22,7 @@ const backToInput = () => {
 window.onpopstate = () => {
   if (window.history.state.pagestate == "resultsdown") {
     backToInput();
+    document.getElementsByClassName("results")[0].innerHTML = "";
   }
 };
 
@@ -99,7 +100,7 @@ document.getElementById("theButton").addEventListener("click", async () => {
   rawNames = [];
   entries = [];
   entriesCleaned = [];
-  document.getElementsByClassName("results")[0].innerHTML = "";
+
   //The clerk jots down the names and IDs of the actors that the gentleman has listed.
   for (var i = 0; i < 3; i++) {
     var selectBox = document.getElementById("person" + (i + 1)).value;
