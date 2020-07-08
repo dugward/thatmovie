@@ -64,6 +64,7 @@
   color: mistyrose;
   text-decoration: none;
   border-bottom: 4px dotted;
+  margin: 0 0.1em 0 0.1em;
 }
 
 .results p.resultsTitle a:hover {
@@ -72,7 +73,7 @@
 }
 
 .results a img {
-  padding: 0 0 1em 1em;
+  padding: 0 0 0.15em 0;
   filter: contrast(70%) saturate(50%);
 }
 
