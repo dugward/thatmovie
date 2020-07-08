@@ -21,8 +21,8 @@ const backToInput = () => {
 
 window.onpopstate = () => {
   if (window.history.state.pagestate == "resultsdown") {
-    backToInput();
     document.getElementsByClassName("results")[0].innerHTML = "";
+    backToInput();
   }
 };
 
