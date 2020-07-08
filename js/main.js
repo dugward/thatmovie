@@ -1,5 +1,5 @@
 // A crude mailbox is constructed for dispatches from the detective
-import { peopleSearch, filmsSearch } from "./searches.js";
+import { filmsSearch } from "./searches.js";
 
 // Empty notepads are strewn about, waiting to be filled.
 var rawNames = [];
