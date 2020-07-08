@@ -42,8 +42,9 @@
 #actor-forms {
   grid-area: center;
   padding-top: 70%;
-  width: 70%;
+  width: 100%;
   margin: 0 auto 0;
+  text-align: left;
 }
 
 .results {
@@ -141,7 +142,6 @@
 
 .selectWraps {
   display: block;
-  width: 80%;
   float: left;
   padding-right: 1em;
 }
@@ -186,16 +186,25 @@ CSS Grid layout for responive:
 --------------------------------------------------------------*/
 @media screen and (min-width: 320px) {
   .site {
-    grid-template-columns: 3em auto 3em;
+    grid-template-columns: 2em auto 2em;
   }
 
   #background-text,
   .results p.resultsTitle {
-    font-size: 6.5vw;
+    font-size: 7.5vw;
+  }
+
+  #warningtext p,
+  #failtext p {
+    font-size: 4.5vw;
   }
 
   #actor-forms {
-    padding-top: 65%;
+    padding-top: 85%;
+  }
+
+  .selectWraps {
+    width: 90%;
   }
 
   .selectWrap {
@@ -204,6 +213,11 @@ CSS Grid layout for responive:
 
   .results a img {
     width: 15em;
+  }
+
+  .progress-button button {
+    width: 4em;
+    height: 1.5em;
   }
 
   .results {
@@ -220,12 +234,27 @@ CSS Grid layout for responive:
     font-size: 5.5vw;
   }
 
+  #warningtext p,
+  #failtext p {
+    font-size: 4vw;
+  }
+
   #actor-forms {
     padding-top: 45%;
   }
 
+  .progress-button button {
+    width: 4em;
+    height: 1.5em;
+  }
+
   .selectWrap {
     padding-bottom: 2em;
+  }
+
+  .selectWraps {
+    width: 80%;
+    margin-left: 6%;
   }
 
   .results a img {
@@ -247,12 +276,22 @@ CSS Grid layout for responive:
     font-size: 4.4vw;
   }
 
+  #warningtext p,
+  #failtext p {
+    font-size: 3vw;
+  }
+
   #actor-forms {
     padding-top: 45%;
   }
 
   .selectWrap {
     padding-bottom: 2em;
+  }
+
+  .selectWraps {
+    width: 70%;
+    margin-left: 10%;
   }
 
   .results a img {
@@ -274,12 +313,22 @@ CSS Grid layout for responive:
     font-size: 4vw;
   }
 
+  #warningtext p,
+  #failtext p {
+    font-size: 2.5vw;
+  }
+
   #actor-forms {
     padding-top: 45%;
   }
 
   .selectWrap {
     padding-bottom: 2em;
+  }
+
+  .selectWraps {
+    width: 70%;
+    margin-left: 10%;
   }
 
   .results a img {
@@ -305,6 +354,11 @@ CSS Grid layout for responive:
     padding-bottom: 2em;
   }
 
+  .selectWraps {
+    width: 70%;
+    margin-left: 10%;
+  }
+
   .results a img {
     width: 12em;
   }
@@ -320,12 +374,22 @@ CSS Grid layout for responive:
     font-size: 3vw;
   }
 
+  #warningtext p,
+  #failtext p {
+    font-size: 2vw;
+  }
+
   #actor-forms {
     padding-top: 38%;
   }
 
   .selectWrap {
     padding-bottom: 2em;
+  }
+
+  .selectWraps {
+    width: 70%;
+    margin-left: 10%;
   }
 
   .results a img {
@@ -336,6 +400,11 @@ CSS Grid layout for responive:
 @media screen and (min-width: 1600px) {
   .results a img {
     width: 15em;
+  }
+
+  .selectWraps {
+    width: 60%;
+    margin-left: 15%;
   }
 }
 @media screen and (min-width: 1700px) {
@@ -348,12 +417,22 @@ CSS Grid layout for responive:
     font-size: 3vw;
   }
 
+  #warningtext p,
+  #failtext p {
+    font-size: 2vw;
+  }
+
   #actor-forms {
     padding-top: 35%;
   }
 
   .selectWrap {
     padding-bottom: 2em;
+  }
+
+  .selectWraps {
+    width: 60%;
+    margin-left: 15%;
   }
 
   .results a img {
