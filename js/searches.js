@@ -1,19 +1,6 @@
 const api_key = "b737a09f5864be7f9f38f1d5ad71c151";
 
-//the Search classes: takes query, talks to tmdb, and spits out result into xSearch.result
-
-export class peopleSearch {
-  constructor(query) {
-    this.query = query;
-  }
-  //the method for getting the results from the API
-  async getResults() {
-    const res = await axios(
-      `https://api.themoviedb.org/3/search/person?api_key=${api_key}&query=${this.query}`
-    );
-    this.result = res;
-  }
-}
+//The detective's method for each new case. No one must know how simple it is, or he would lose his job. The clerk's list is mailed to his friend at the library and he simply drinks bourbon as he waits for a reply.
 
 export class filmsSearch {
   constructor(query) {

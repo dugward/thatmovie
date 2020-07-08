@@ -16,6 +16,8 @@
     <link href="./css/style.css" rel="stylesheet" />
   </head>
   <body class="site">
+    <!-- header text with site title -->
+
     <div id="background-text">
       <p>
         I'm thinking of
@@ -28,7 +30,10 @@
         >
       </p>
     </div>
+
+    <!-- Container for the selects, the button, and the warning texts -->
     <div id="actor-forms">
+      <!-- The selects, in containers for padding, in a container to push left -->
       <div class="selectWraps">
         <div class="selectWrap">
           <select class="js-example-data-ajax" id="person1"></select>
@@ -40,6 +45,7 @@
           <select class="js-example-data-ajax" id="person3"></select>
         </div>
       </div>
+      <!-- The remove buttons, in a container to keep them up next to the selects -->
       <div id="removes">
         <i class="material-icons" id="remove1">remove_circle</i>
         <i class="material-icons" id="remove2">remove_circle</i>
@@ -62,7 +68,7 @@
         </div>
       </div>
     </div>
-
+    <!-- The container for the resluts title and images -->
     <div class="results" style="display: none;"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

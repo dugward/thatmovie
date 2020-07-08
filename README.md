@@ -8,5 +8,5 @@ Simply enter two or three actor's names and hit submit!
 
 ## Images
 
-![Example image 1](tm1.jpg)
 ![Example image 2](tm2.jpg)
+![Example image 1](tm1.jpg)
