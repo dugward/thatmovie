@@ -170,6 +170,12 @@
   color: silver;
 }
 
+#removes {
+  width: 2em;
+  float right;
+  display:block;
+}
+
 #actor-forms i:hover {
   color: mistyrose;
   cursor: pointer;
