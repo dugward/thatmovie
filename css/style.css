@@ -45,7 +45,9 @@
   width: 100%;
   margin: 0 auto 0;
   text-align: left;
+  
 }
+
 
 .results {
   grid-area: center;
@@ -162,6 +164,7 @@
 .selectWrap {
   display: block;
   margin-bottom: 0.5em;
+  
 }
 
 #actor-forms i {
